@@ -16,7 +16,7 @@ spec:
         app: web
     spec:
       containers:
-      - image: ldmoko/myapp:v1
+      - image: ldmoko/myapp:v2
         name: mynginx
 
 ---
