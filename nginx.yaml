@@ -16,7 +16,7 @@ spec:
         app: web
     spec:
       containers:
-      - image: ldmoko/myapp:v2
+      - image: ldmoko/myapp:${BUILD_NUMBER}
         name: mynginx
 
 ---
