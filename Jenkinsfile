@@ -20,6 +20,7 @@ pipeline {
          
           kubernetesDeploy(configs: "nginx.yaml", kubeconfigId: "mykubeconfig")
           kubernetesDeploy(configs: "test.yaml", kubeconfigId: "mykubeconfig")
+          echo "=== Finished: SUCCESS 构建发布完成 ==="
           sleep 60
         }
       }
