@@ -15,7 +15,8 @@ pipeline {
         script {
           echo "hello"
           sh "hostname"
-          kubernetesDeploy(configs: "nginx.yaml", configs: "test.yaml", kubeconfigId: "mykubeconfig")
+          kubernetesDeploy(configs: "nginx.yaml", kubeconfigId: "mykubeconfig")
+          kubernetesDeploy(configs: "test.yaml", kubeconfigId: "mykubeconfig")
         }
       }
     }
