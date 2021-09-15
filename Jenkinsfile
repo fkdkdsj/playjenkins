@@ -15,6 +15,9 @@ pipeline {
         script {
           echo "hello"
           sh "hostname"
+          sh "cat /etc/issue"
+          sh "ip addr"
+         
           kubernetesDeploy(configs: "nginx.yaml", kubeconfigId: "mykubeconfig")
           kubernetesDeploy(configs: "test.yaml", kubeconfigId: "mykubeconfig")
         }
