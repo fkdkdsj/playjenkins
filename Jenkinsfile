@@ -20,6 +20,7 @@ pipeline {
          
           kubernetesDeploy(configs: "nginx.yaml", kubeconfigId: "mykubeconfig")
           kubernetesDeploy(configs: "test.yaml", kubeconfigId: "mykubeconfig")
+          sleep 60
         }
       }
     }
