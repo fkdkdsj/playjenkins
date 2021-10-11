@@ -4,11 +4,11 @@ pipeline {
 
   stages {
 
-    stage('Checkout Source') {
-      steps {
-        git url:'http://github.com/fkdkdsj/playjenkins', branch:'test-deploy-stage'
-      }
-    }
+//     stage('Checkout Source') {
+//       steps {
+//         git url:'http://github.com/fkdkdsj/playjenkins', branch:'test-deploy-stage'
+//       }
+//     }
 
     stage('Deploy App') {
       steps {
