@@ -1,14 +1,14 @@
 pipeline {
 
-  agent { label 'jenkins-agent' }
+  agent { label 'base' }
 
   stages {
 
-    stage('Checkout Source') {
-      steps {
-        git url:'https://github.com/fkdkdsj/playjenkins.git', branch:'test-deploy-stage'
-      }
-    }
+//     stage('Checkout Source') {
+//       steps {
+//         git url:'https://github.com/fkdkdsj/playjenkins.git', branch:'test-deploy-stage'
+//       }
+//     }
 
     stage('Deploy App') {
       steps {
