@@ -5,7 +5,7 @@ metadata:
   labels:
     app: web
   name: test
-  namespace: kubesphere-sample-dev
+  namespace: test-project
 spec:
   replicas: 1
   selector:
