@@ -5,7 +5,7 @@ metadata:
   labels:
     app: web
   name: mynginx
-  namespace: demo-project
+  namespace: test-project
 spec:
   replicas: 1
   selector:
@@ -27,7 +27,7 @@ metadata:
   labels:
     app: web
   name: mynginx
-  namespace: demo-project
+  namespace: test-project
 spec:
   ports:
   - nodePort: 32222
